@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-template-rows: .1fr .4fr .3fr .2fr .1fr;
+    grid-template-areas: 
+    "header menu menu menu" 
+    "hero hero hero hero"
+    "main main . image"
+    "main main . extra"
+    "banner banner banner banner";    
+    gap: 0px 0px;
+    
+}
+
+.container div{
+    border: dotted 1px black;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.item1{
+    grid-area: header;
+    background-color: rgb(8, 179, 142)
+     
+}
+
+.item2{
+    grid-area: menu; 
+    background-color: rgb(8, 179, 142);
+}
+
+.item3{
+    grid-area: hero; 
+    background-color: rgb(11, 122, 85);
+}
+
+.item4{
+    grid-area: main; 
+    background-color: rgb(13, 110, 110);
+}
+
+.item5{
+    grid-area: image; 
+    background-color: rgb(28, 218, 145);
+}
+
+.item6{
+    grid-area: extra; 
+    background-color: rgb(10, 73, 73);
+}
+
+.item7{
+    grid-area: banner; 
+    background-color: rgb(2, 46, 46);
+}

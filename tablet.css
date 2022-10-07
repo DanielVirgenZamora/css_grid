@@ -1,0 +1,13 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-template-rows: .1fr .4fr .3fr .3fr .2fr;
+    grid-template-areas: 
+    "header header header header" 
+    "hero hero hero hero"
+    "menu main main main"
+    "menu banner banner banner"
+    "menu extra extra image";    
+   
+}
